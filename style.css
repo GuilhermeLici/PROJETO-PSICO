@@ -8,7 +8,7 @@
 
 body {
     background: linear-gradient(to top right, rgb(113, 0, 174), rgb(78, 152, 255), rgb(170, 34, 234));
-    height: 100vh;
+    height: 200vh;
     margin: 0;
       background-size: 9000% 9000%;
       animation: gradient 10s ease infinite;
@@ -271,7 +271,7 @@ section.especiliadades .flex {
 
 /* ESTILO DO SOBRE */
 section.sobre {
-    padding: 100px;
+    padding: 100px 50px;
 box-shadow: 0 0 40px 10px #ffffff58;
 }
 
@@ -306,7 +306,7 @@ section.sobre .flex {
 
 /* ESTILO DO PORTFÓLIO */
 section.portfolio {
-    padding: 80px 4%;
+    padding: 80px 20%;
     box-shadow: 0 0 40px 10px #ffffff7d;
 }
 
@@ -352,79 +352,98 @@ section.portfolio .flex {
     opacity: 1;
 }
 
-/* ESTILO DO FORMULÁRIO DE CONTATO */
-section.formulario {
-    padding: 80px 4%;
+/* ESTILO DO FEEDBACK*/
+.feedback-section {
+  text-align: center;
+  padding: 80px 10px;       /* aumenta espaço interno */
+  margin: 60px auto;        /* dá distância entre as seções */
+  background: linear-gradient;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 800px;         /* limite de largura da seção */
 }
 
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
+.feedback-section h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-form input,
-form textarea {
-    width: 100%;
-    background-color: #353435;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: #fff;
-    font-size: 18px;
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-form textarea {
-    resize: none;
-    max-height: 200px;
+.feedback-form textarea {
+  width: 70%;               /* reduz largura do campo */
+  max-width: 600px;         /* limite para telas grandes */
+  height: 160px;            /* altura ajustada */
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: #2d2d2d;
+  color: #fff;
+  font-size: 16px;
+  resize: none;
+  transition: 0.3s;
 }
 
-form .btn-enviar {
-    margin-top: 20px;
-    text-align: center;
+.feedback-form textarea:focus {
+  outline: none;
+  border: 5px solid #ffffff;
+  background-color: #1e1e1e;
 }
 
-form .btn-enviar input {
-    width: 120px;
-    background-color: #ffffff;
-    color: #000;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
+.feedback-form button {
+  padding: 12px 25px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #000;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+.feedback-form button:hover {
+  background: #000;
+  color: #fff;
+}
+
 
 /* ESTILO DO RODAPÉ */
 
-footer {
-    padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #ffffff75;
+.footer {
+  
+  padding: 20px 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 60px;
+  box-shadow: 0 -3px 10px rgba(255, 255, 255, 0.56);
 }
 
-footer .flex {
-    justify-content: space-between;
+.footer h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-footer .line-footer {
-    padding: 20px 0;
+.footer p {
+  margin: 5px 0 15px;
+  font-size: 14px;
+  opacity: 0.9;
 }
 
-.borda {
-    border-top: 2px solid #c800ff;
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 13px;
+  opacity: 0.8;
 }
 
-footer .line-footer p i {
-    color: #ffffff;
-    font-size: 22px;
-}
-
-footer .line-footer p a {
-    color: #fff;
-}
 
 @media screen and (max-width: 1020px) {
 
